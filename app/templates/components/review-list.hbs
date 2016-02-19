@@ -1,3 +1,10 @@
+<div>
+    Sort by
+    {{radio-button value='date' groupValue=sortBy}} Date
+    {{radio-button value='rating' groupValue=sortBy}} Rating 
+    {{radio-button value='username' groupValue=sortBy}} User 
+</div>
+
 {{#each sortedReviews as |review|}}
   <li>
     <h3>{{review.title}} - {{review.rating}} out of 5</h3>
